@@ -4,6 +4,7 @@ Abaixo será apresentado os principais pontos que vamos abordar nessa jornada co
 ----
 **Gráfico de aprendizado**
 
+```
 ::: mermaid
 flowchart TD
 
@@ -20,10 +21,14 @@ flowchart TD
     subgraph Dados
 
     Python{Python} --> id11[Automatização] & id12[ML/IA]
-    id3 & Python --> id8[Ciencia de dados]
+    id3 & Python --> id8{{Ciencia de dados}} 
+    id3 --> BI
+    style id8 fill:green
     end
 
 :::
+
+```
 
 ----
 **Fontes:**
