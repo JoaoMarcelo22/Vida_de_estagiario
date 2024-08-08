@@ -4,8 +4,7 @@ Abaixo será apresentado os principais pontos que vamos abordar nessa jornada co
 ----
 **Gráfico de aprendizado**
 
-```
-::: mermaid
+```mermaid
 flowchart TD
 
     id1((Ponto Inicial)) --> id2{Logica de programação} & id3[SQL] & id4[Git]
@@ -25,9 +24,6 @@ flowchart TD
     id3 --> BI
     style id8 fill:green
     end
-
-:::
-
 ```
 
 ----
