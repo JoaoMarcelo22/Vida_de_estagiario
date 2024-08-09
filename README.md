@@ -30,4 +30,7 @@ flowchart TD
 **Fontes:**
 
 <a href="https://mermaid.js.org/syntax/flowchart.html">Mermaid - MD</a> <br/>
-<a href="https://www.youtube.com/watch?v=_yBXhKfqDRI">Mermaid Embedd in GitHub</a>
+<a href="https://www.youtube.com/watch?v=_yBXhKfqDRI">Mermaid Embedd in GitHub</a> <br/>
+<a href="https://www.w3schools.com/git/default.asp?remote=github">W3C - Git</a> <br/>
+<a href="https://www.w3schools.com/js/default.asp">W3C - JavaScript</a> <br/>
+<a href="https://www.w3schools.com/python/default.asp">W3c - Python</a> <br/>
