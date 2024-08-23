@@ -1,0 +1,53 @@
+-- Criação do Database; 
+create database futebol;
+
+-- Criação das tabelas;
+create table clubes(
+  time_id serial,
+  nome varchar(255),
+  pontos int,
+  titulos int,
+  primary key(time_id)
+);
+  
+create table jogadores(
+	jogador_id serial,
+  clubes_id int,
+  nome varchar(255),
+  posicao varchar(255),
+  titulos int,
+  penalidades int,
+  primary key (jogador_id),
+  foreign key (clubes_id) references clubes(time_id)
+);
+
+--Inserindo Primeiro clube;
+insert into clubes(nome,pontos,titulos)
+values('Flamengo',32,3);
+
+--Inserindo clubes restantes;
+insert into clubes(nome,pontos,titulos)
+values
+('Botafogo',46,3),
+('Fortaleza',45,3),
+('Palmeiras',41,3),
+('Bahia',38,3),
+('Sao_Paulo',38,3),
+('Cruzeiro',37,3),
+('Atletico_MG',30,3),
+('Athletico_PR',29,3),
+('Vasco',28,3),
+('Juventude',28,3),
+('Bragantino',27,3),
+('Internacional',25,3),
+('Criciuma',25,3),
+('Gremio',24,3),
+('Vitoria',22,3),
+('Corinthians',22,3),
+('Fluminense',21,3),
+('Cuiaba',18,3),
+('Atletico_GO',15,3);
+
+--Conferindo a presença dos clubes e ordenando de forma decrescente;
+select * from clubes
+order by pontos desc;
