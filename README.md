@@ -2,9 +2,10 @@
 Abaixo será apresentado os principais pontos que vamos abordar nessa jornada conjunta. *lembrando que esse grafico será modificado de acordo com o aprendizado fornecido no nosso canal.*
 
 ----
-**Progresso em SQL** 
-Manipulação - 23/08/2024
+**Progresso em SQL** <br/>
+Manipulação - 23/08/2024 <br/>
 Manipulação - 24/08/2024
+
 ----
 **Gráfico de aprendizado**
 
