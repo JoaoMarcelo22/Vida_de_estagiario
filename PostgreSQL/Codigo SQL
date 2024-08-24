@@ -51,3 +51,83 @@ values
 --Conferindo a presença dos clubes e ordenando de forma decrescente;
 select * from clubes
 order by pontos desc;
+
+--Alteração na coluna jogadores, de penalidade para numero;
+alter table jogadores
+rename column penalidades to numero_jogador
+
+--Incluindo os jogadores;
+insert into jogadores(clubes_id,nome,posicao,titulos,numero_jogador)
+values
+(1,'Matheus Cunha','Goleiro',0,25),
+(1,'Rossi','Goleiro',0,1),
+(1,'Léo Pereira','Zagueiro',0,4),
+(1,'David Luiz','Zagueiro',0,23),
+(1,'Cleiton','Zagueiro',0,33),
+(1,'Fabrício Bruno','Zagueiro',0,15),
+(1,'Léo Ortiz','Zagueiro',0,3),
+(1,'Varela','Lateral Direito',0,2),
+(1,'wesley','Lateral Direito',0,43),
+(1,'Matías Vinã','Lateral Esquerdo',0,17),
+(1,'Ayrton Lucas','Lateral Esquerdo',0,6),
+(1,'Igor Jesus','Volante',0,48),
+(1,'Erick','Volante',0,5),
+(1,'Gerson','Volante',0,8),
+(1,'Allan','Volante',0,21),
+(1,'Matheus Gonçalves','Meia',0,20),
+(1,'De Arrascaeta','Meia',0,14),
+(1,'Victor Hugo','Meia',0,29),
+(1,'De La Cruz','Meia',0,18),
+(1,'Lorran','Meia',0,19),
+(1,'Gabi','Atacante',0,99),
+(1,'Bruno Henrique','Atacante',0,27),
+(1,'Pedro','Atacante',0,9),
+(1,'Everton','Atacante',0,11),
+(1,'Luiz Araujo','Atacante',0,7),
+(1,'Carlinhos','Atacante',0,22);
+
+--Obeservando se todos os jogadores foram incluidos;
+select count(nome) from jogadores;
+
+--Nesta carga obtivemos 26 jogadores, divididos em : Atacantes(6), Meias(5), Volantes(4), LE(2), LD(2), 
+-- Zagueiros(5) e Goleiro(2). Agora vamos confirmar esses dados;
+
+--Goleiros
+select * from jogadores where posicao = 'Goleiro';
+--QtD Goleiros
+select count(case when posicao = 'Goleiro' then 1 end) from jogadores;
+
+--Zagueiros
+select * from jogadores where posicao = 'Zagueiro';
+--QtD Zagueiro
+select count(case when posicao = 'Zagueiro' then 1 end) from jogadores;
+
+--Lateral Direito(LD)
+select * from jogadores where posicao = 'Lateral Direito';
+--QtD Lateral Direito
+select count(case when posicao = 'Lateral Direito' then 1 end) from jogadores;
+
+--Lateral Esquerdo(LE)
+select * from jogadores where posicao = 'Lateral Esquerdo';
+--QtD Lateral Esquerdo
+select count(case when posicao = 'Lateral Esquerdo' then 1 end) from jogadores;
+
+--Volante
+select * from jogadores where posicao = 'Volante';
+--QtD Volante
+select count(case when posicao = 'Volante' then 1 end) from jogadores;
+
+--Meia
+select * from jogadores where posicao = 'Meia';
+--QtD Meia
+select count(case when posicao = 'Meia' then 1 end) from jogadores;
+
+--Atacante
+select * from jogadores where posicao = 'Atacante';
+--QtD Atacante
+select count(case when posicao = 'Atacante' then 1 end) from jogadores;
+
+--Ordenando todos os jogadores por ordem alfabetica, usando o nome como criterio;
+select * from jogadores
+order by nome;
+
