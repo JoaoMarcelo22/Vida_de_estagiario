@@ -34,9 +34,11 @@ flowchart TD
 ----
 **Fontes:**
 
+
 <a target="_blank" href="https://mermaid.js.org/syntax/flowchart.html"  >Mermaid - MD</a> <br/>
 <a target="_blank" href="https://www.youtube.com/watch?v=_yBXhKfqDRI" >Mermaid Embedd in GitHub</a> <br/>
 <a target="_blank" href="https://www.w3schools.com/git/default.asp?remote=github" >W3C - Git</a> <br/>
 <a target="_blank" href="https://www.w3schools.com/js/default.asp" >W3C - JavaScript</a> <br/>
 <a target="_blank" href="https://www.w3schools.com/python/default.asp" >W3C - Python</a> <br/>
 <a target="_blank" href="https://basedosdados.org/#theme" >Base de Dados</a> <br/>
+<a target="_blank" href="https://www.kaggle.com/"  >Kaggle</a> <br/>
